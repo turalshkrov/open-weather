@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+main {
+    padding: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu {
+    display: flex;
+}
+.menu ul {
+    display: flex;
+    margin-right:  2rem;
+    list-style-type: none;
+}
+.menu ul li {
+    margin-left: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1.25rem;
+    border-radius: 20px;
+}
+.selected {
+    color: #eee;
+    background-color: #111;
+}
+.search-input {
+    padding: 0.5rem 1.25rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    border: 1px solid grey;
+    color: gray;
+    outline: none;
+}
+.content {
+    padding-top: 3rem;
+    display: flex;
+}
+.main-content {
+    padding: 2rem;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.weather-icon img {
+    width: 200px;
+}
+.weather-infos {
+    width: 220px;
+}
+.degree {
+    font-weight: 300;
+    font-size: 5rem;
+    line-height: 5rem;
+}
+.alt-title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid grey;
+    margin-bottom: 1rem;
+}
+.more-infos {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    flex-wrap: wrap;
+}
+.weather-card {
+    width: 30%;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: #f3f4f6;
+    margin-top: 1.5rem;
+    box-shadow: 0px 3px 10px 1px lightgray;
+}
+.card-title h2{
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+.card-content {
+    width: 100%;
+    height: 70%;
+    font-weight: 400;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    main {
+        padding: 3rem;
+    }
+    .content {
+        flex-wrap: wrap;
+    }
+    .main-content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .weather-icon {
+        margin-right: 2rem;
+    }
+    .more-infos {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .weather-card {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        padding: 2rem 1rem;
+    }
+    .weather-card {
+        width: 90%;
+    }
+    .search, .menu {
+        margin: auto;
+        margin-bottom: 1.5rem;
+    }
+}

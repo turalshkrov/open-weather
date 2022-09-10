@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="images/thermometer-48.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Open Weather</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <nav>
+                <div class="search">
+                    <form action="" class="search-form">
+                        <input type="text" class="search-input" value="Baku">
+                    </form>
+                </div>
+                <div class="menu">
+                    <ul class="degree-list">
+                        <li class="selected" id="c">C °</li>
+                        <li id="k">K °</li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="content">
+                <div class="main-content">
+                    <div class="weather-icon">
+                    </div>
+                    <div class="weather-infos">
+                        <h2 class="degree"></h2>
+                        <div class="alt-title">
+                            <span class="location"></span>
+                            <span class="date"></span>
+                        </div>
+                        <div class="weather-text"></div>
+                    </div>
+                </div>
+                <div class="more-infos">
+                    <div class="weather-card">
+                        <div class="card-title">
+                            <h2>Visibility</h2>
+                        </div>
+                        <div class="card-content">
+                            <p id="visibility">10</p>
+                        </div>
+                    </div>
+                    <div class="weather-card">
+                        <div class="card-title">
+                            <h2>Wind Speed</h2>
+                        </div>
+                        <div class="card-content">
+                            <p id="wind"></p>
+                        </div>
+                    </div>
+                    <div class="weather-card">
+                        <div class="card-title">
+                            <h2>Timezone</h2>
+                        </div>
+                        <div class="card-content">
+                            <p id="timezone"></p>
+                        </div>
+                    </div>
+                    <div class="weather-card">
+                        <div class="card-title">
+                            <h2>Humidity</h2>
+                        </div>
+                        <div class="card-content">
+                            <p id="humidity"></p>
+                        </div>
+                    </div>
+                    <div class="weather-card">
+                        <div class="card-title">
+                            <h2>Pressure</h2>
+                        </div>
+                        <div class="card-content">
+                            <p id="pressure">0</p>
+                        </div>
+                    </div>
+                    <div class="weather-card">
+                        <div class="card-title">
+                            <h2>Country Cod</h2>
+                        </div>
+                        <div class="card-content">
+                            <p id="country"></p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script/app.js"></script>
+</body>
+</html>
